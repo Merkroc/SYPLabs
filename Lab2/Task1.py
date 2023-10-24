@@ -1,9 +1,10 @@
 def calculation(arg):
     numbers = []
-    for i in range(0, 1001):
-        if (i%arg==0):
+    for i in range(501):
+        if i % arg == 0:
             numbers.append(i)
     return numbers
+
 
 print("Введите число:")
 arg = int(input())
