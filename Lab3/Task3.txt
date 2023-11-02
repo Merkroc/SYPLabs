@@ -1,0 +1,3 @@
+Russian 100
+Physics 120 50 20
+Electronics 40 10
