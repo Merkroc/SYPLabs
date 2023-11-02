@@ -7,8 +7,9 @@ with open("Task2.txt", 'a') as f:
             break
         f.write(new_str+'\n')
 
-f = open("Task2.txt")
-lines = f.readlines()
+with open("Task2.txt", 'r') as f:
+    lines = f.readlines()
+
 lines = [i.split() for i in lines]
 
 print("Сотрудники с окладом более 2 тысяч:")
