@@ -14,11 +14,11 @@ lines = [i.split() for i in lines]
 print("Сотрудники с окладом более 2 тысяч:")
 for k in lines:
     if float(k[1]) >= 2:
-        print(f'{str(k[0])} {str(k[1])}')
+        print(k[0], k[1])
 
 print("\nСотрудники с окладом менее 2 тысяч:")
 for k in lines:
     if float(k[1]) < 2:
-        print(f'{str(k[0])} {str(k[1])}')
+        print(k[0], k[1])
 
         
