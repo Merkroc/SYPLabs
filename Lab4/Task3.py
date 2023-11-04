@@ -40,8 +40,9 @@ class Animal:
     price = 0
     breed = ''
     def __init__(self):
-        self.price = float(input("Введите цену: "))
         self.breed = input("Введите породу: ")
+        self.price = float(input("Введите цену: "))
+
     def type_of_movement(self):
         return
 
@@ -77,10 +78,13 @@ while True:
                 f.write(f'Название магазина: {shop.name}\n')
                 ls = shop.get_list_of_animals()
                 f.write("Порода|Цена:\n")
+
                 for i in ls:
                     zapis = ''
                     f.write(zapis.join(f"{i.breed}|{i.price} "))
+
             print("Данные записаны успешно!\n")
+
         print("Спасибо за использование!!")
         break
 
