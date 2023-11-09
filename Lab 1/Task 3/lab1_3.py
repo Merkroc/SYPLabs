@@ -15,5 +15,5 @@ if(len(stroka) > 0):
 
     print(stroka)
 else:
-    print("Вы ничего не вве")
+    print("Вы ничего не ввели")
 #l.sort(reverse=True)

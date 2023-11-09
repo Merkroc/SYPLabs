@@ -1,12 +1,12 @@
 def calculation(arg):
     numbers = []
-    for i in range(501):
-        if i % arg == 0:
+    for i in range(1, arg+1):
+        if arg % i == 0:
             numbers.append(i)
     return numbers
 
 
 print("Введите число:")
 arg = int(input())
-print("Числа, которые делятся на", arg)
+print(f"{arg} делится без остатка на:")
 print(calculation(arg))

@@ -8,6 +8,16 @@ def view_all(the_dict):
 
 def buyProduct(product_name, amount):
 
+    if amount.isalpha():
+        print("Вы ввели не число!")
+        return
+
+    amount = int(amount)
+
+    if amount <0:
+        print("Ошибка!")
+        return
+
     if product_name in the_dict:
 
         price = the_dict[product_name][2]
@@ -47,7 +57,7 @@ while (continue_work == True):
 
     elif (choice == 5):
         name = input("Введите название: ")
-        amount = int(input("Введите количество: "))
+        amount = input("Введите количество: ")
         buyProduct(name, amount)
 
     else:
