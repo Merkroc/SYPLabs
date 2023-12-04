@@ -7,6 +7,7 @@ with open("F1.txt", 'w') as f1:
 with open("F2.txt", 'w') as f2:
     f1 = open("F1.txt")
     str_f1 = f1.readlines()
+    f1.close()
     for i in str_f1:
         alpha = True
         for k in i:
